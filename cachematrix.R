@@ -32,7 +32,6 @@ cacheSolve <- function(x, ...) {
         ## First see if we already have it in the cache
         m <- x$getmatrix()
         ## If it is in the cache, return the cached data
-        message(is.null(m))
         if (!is.null(m)) {
             message("getting cached data")
             return(m)
